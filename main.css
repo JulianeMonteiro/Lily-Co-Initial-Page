@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond&family=Work+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cinzel", serif; /*
+  font-family: 'Cinzel', serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Work Sans', sans-serif; 
+  */
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Header */
+
+h1 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  color: #edebe7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+nav {
+  justify-content: space-between;
+  margin: auto 50px;
+  padding: 15px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  color: #edebe7;
+  height: calc(70vh - 150px);
+  background: no-repeat center/cover url("images/header.png");
+  position: relative;
+}
+
+header::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(186, 169, 138, 0.8);
+}
+
+.header-content {
+  max-width: 400px;
+  margin: 160px auto;
+  text-align: center;
+  position: relative;
+}
+.header-content p {
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+}
+
+/* Main */
+/* Section 1 */
+.container {
+  width: 100vw;
+  height: 70vh;
+  margin: 0 auto;
+}
+
+.blog-images,
+.description {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+
+.description .div {
+  width: 30%;
+  justify-content: space-between;
+}
+
+.description img,
+.description .cta {
+  height: 100%;
+  width: 25vw;
+  text-align: center;
+}
+
+.cta,
+.view-event {
+  width: 20vw;
+}
+
+.cta p,
+.view-event p {
+  font-family: "EB Garamond", serif;
+  padding: 50px 0;
+}
+
+.cta h3,
+.cta p,
+.view-event h3,
+.view-event p {
+  padding-top: 70px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.cta h3,
+.view-event h3 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.description a,
+.view-event a {
+  border: none;
+  cursor: pointer;
+  padding: 15px 35px;
+  background-color: #fff;
+  border: 0.5px solid #000;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  color: #000;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+.view-event a:hover,
+.description a:hover {
+  background-color: #edebe7;
+}
+
+.about-event {
+  width: 70vw;
+}
+
+.about-event,
+.view-event,
+.event-photos img {
+  height: 70vh;
+}
+
+.view-event {
+  padding: 150px 30px;
+  text-align: center;
+  height: 70vh;
+  width: 30%;
+  margin: 0;
+}
+
+.blog,
+.about-event {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  height: 100%;
+  width: 100vw;
+}
+
+.about-event .photo-30 {
+  height: 100%;
+  width: 41.2%;
+}
+
+.about-event .photo-20 {
+  height: 100%;
+  width: 29%;
+}
+
+.event-photos {
+  justify-content: flex-end;
+}
+
+.view-event h3 {
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.view-event p {
+  padding: 80px 0;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.images-blog img {
+  width: 100vw;
+  height: 100%;
+  margin: 30px 0 30px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(186, 169, 138, 0.8);
+  color: #ecf0f1;
+}
+
+.footer img {
+  height: 150px;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+}
+
+#social-media {
+  width: 40px;
+  height: 50px;
+}
+
+.flex {
+  display: block;
+  text-align: center;
+}
